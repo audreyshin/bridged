@@ -2,68 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Resources | BridgED</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&display=swap" rel="stylesheet" />
 </head>
-
 <body>
-  <!-- Header -->
-  <header>
-    <div class="nav-container">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="BridgED logo" />
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="" />
+        <span class="brand-name">Bridg<span>ED</span></span>
       </a>
-      <nav>
-        <ul class="nav-links">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="information.html">Information</a></li>
-          <li><a href="resources.html" class="active">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Our work</a></li>
+          <li><a href="information.html">Learn</a></li>
+          <li><a href="resources.html" aria-current="page">Resources</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-kicker">Resources</p>
+        <h1>A starting list for students, siblings, and teachers.</h1>
+        <p>Videos, books, and clubs at Ridgewood High School — plus the education bills every classroom should actually know.</p>
+      </div>
+    </section>
 
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cards">
+          <article class="card resource-block">
+            <h3>Videos</h3>
+            <ul class="resource-list">
+              <li><a href="https://www.youtube.com/watch?v=_dPyzFFcG7A" target="_blank" rel="noreferrer">The True Gifts of a Dyslexic Mind — Dean Bragonier</a></li>
+              <li><a href="https://www.youtube.com/watch?v=SMpHMiNCf2" target="_blank" rel="noreferrer">Impaired by Birth, Disabled by Perception — Alan Carrigan</a></li>
+              <li><a href="https://www.youtube.com/watch?v=bC0hlK7WGcM" target="_blank" rel="noreferrer">How a 13-Year-Old Changed “Impossible” to “I’m Possible” — Sparsh Shah</a></li>
+            </ul>
+          </article>
+          <article class="card resource-block">
+            <h3>Books</h3>
+            <ul class="resource-list">
+              <li><em>El Deafo</em> by Cece Bell</li>
+              <li><em>Out of My Mind</em> by Sharon M. Draper</li>
+            </ul>
+          </article>
+          <article class="card resource-block">
+            <h3>Clubs at Ridgewood High School</h3>
+            <ul class="resource-list">
+              <li>BridgED</li>
+              <li>Unified</li>
+              <li>Siblings and Friends with Disabilities</li>
+            </ul>
+          </article>
+        </div>
+        <p style="margin-top: 28px;"><a href="disability-rights.html">504 plans, IEPs, ADA, and IDEA →</a></p>
+        <p style="margin-top: 10px;"><a href="bibliography.html">Sources we cite →</a></p>
+      </div>
+    </section>
+  </main>
 
-  <!-- Resources Content -->
-  <section class="resources-section">
-    <div class="container">
-      <h2>Resources to Educate Yourself</h2>
-
-      <h3>Videos</h3>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=_dPyzFFcG7A" target="_blank">The True Gifts of a Dyslexic Mind | Dean Bragonier</a></li>
-        <li><a href="https://www.youtube.com/watch?v=SMpHMiNCf2" target="_blank">Impaired by Birth, Disabled by Perception | Alan Carrigan</a></li>
-        <li><a href="https://www.youtube.com/watch?v=bC0hlK7WGcM" target="_blank">How a 13-Year-Old Changed 'Impossible' to 'I'm Possible' | Sparsh Shah</a></li>
-      </ul>
-
-      <h3>Books</h3>
-      <ul>
-        <li><em>El Deafo</em> by Cece Bell</li>
-        <li><em>Out of My Mind</em> by Sharon M. Draper</li>
-      </ul>
-
-      <h3>Clubs at Ridgewood High School</h3>
-      <ul>
-        <li>BridgED</li>
-        <li>Unified</li>
-        <li>Siblings and Friends with Disabilities</li>
-      </ul>
-
-      <p style="margin-top: 40px;"><a href="bibliography.html">Sources →</a></p>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 BridgED. Empowering Students. A fiscally sponsored 501(c)(3) nonprofit.</p>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 BridgED. A fiscally sponsored 501(c)(3) nonprofit.</p>
+      <p><a href="https://www.instagram.com/bridged___" target="_blank" rel="noreferrer">Instagram @bridged___</a></p>
     </div>
   </footer>
+  <script src="site.js"></script>
 </body>
 </html>

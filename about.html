@@ -3,23 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us | BridgED</title>
+  <title>About | BridgED</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <div class="nav-container">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="BridgED logo" />
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="" />
+        <span class="brand-name">Bridg<span>ED</span></span>
       </a>
-      <nav>
-        <ul class="nav-links">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html" class="active">About Us</a></li>
-          <li><a href="information.html">Information</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="work.html">Our work</a></li>
+          <li><a href="information.html">Learn</a></li>
           <li><a href="resources.html">Resources</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
@@ -27,52 +31,106 @@
     </div>
   </header>
 
-  <!-- Sean Section -->
-  <section class="about-section">
-    <div class="about-content">
-      <div class="about-text">
-        <h2>Sean Aono</h2>
-        <p>Sean Aono is a cofounder at BridgED, dedicated to spreading awareness about disabilities within his community. He was motivated by the disconnection he felt between disabled students and their peers, often caused by misunderstanding and lack of exposure. He felt responsible to make a difference. Recognizing how easily students with disabilities can feel overlooked or excluded in school environments, Sean felt driven to create a space where empathy, respect, and understanding are actively taught and encouraged. Together with Kathryn, they have developed an organization that empowers students to reshape how young people perceive the disabled community.</p>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-kicker">About us</p>
+        <h1>Six cofounders. Kathryn stayed to keep building it.</h1>
+        <p>BridgED began as a student effort in Ridgewood, New Jersey: teach disability awareness, support educators, and make school a place where disabled students are understood. The team is six cofounders. Kathryn Shin is the original cofounder who stayed.</p>
       </div>
-      <div class="about-image">
-        <img src="images/sean.png" alt="Sean Aono" />
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Kathryn Section -->
-  <section class="about-section alt">
-    <div class="about-content reverse">
-      <div class="about-image">
-        <img src="images/kat.png" alt="Kathryn Shin" />
+    <section class="section" style="padding-top: 0;">
+      <div class="container split">
+        <img src="images/team-photo.png" alt="The six BridgED cofounders standing together on a grassy field" />
+        <div class="prose">
+          <p class="section-kicker">The founding team</p>
+          <h2 class="section-title">A group of six, built around one through-line.</h2>
+          <p>The cofounders started BridgED because they saw the gap between disabled students and their peers — misunderstanding, too little exposure, and classrooms that were not set up to support learning accommodations.</p>
+          <p>Drop names and portraits into the five open cards below as you have them. Kathryn’s card is filled in now.</p>
+        </div>
       </div>
-      <div class="about-text">
-        <h2>Kathryn Shin</h2>
-        <p>Kathryn Shin co-founded BridgED with Sean Aono. Having received learning accommodations herself and witnessing the experiences of family members and friends with disabilities, she was deeply motivated to raise awareness about disabilities and the laws that protect individuals with them. Previously, Kathryn earned first place at the National History Day Competition for her in-depth research on the Americans with Disabilities Act, which she later had the honor of presenting at the Smithsonian National Museum of American History in Washington, D.C. Passionate about fostering understanding, she aimed to educate both students and educators about disabilities, striving to help society move toward greater inclusivity.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-
-  <!-- Sean Section -->
-  <section class="about-section">
-    <div class="about-content">
-      <div class="about-text">
-        <h2>Maura Cahill</h2>
-        <p>Maura Cahill is a cofounder at BridgED, dedicated to spreading awareness about disabilities within her community. She is a freshman at Ridgewood High School and was motivated by the disconnection she felt between disabled students and their peers.</p>
+    <section class="section band">
+      <div class="container">
+        <article class="feature-person">
+          <img src="images/kat.jpg" alt="Kathryn Shin, cofounder of BridgED" />
+          <div class="feature-copy prose">
+            <p class="section-kicker">Cofounder who stayed</p>
+            <h2 class="section-title">Kathryn Shin</h2>
+            <p>Kathryn co-founded BridgED after receiving learning accommodations herself and watching family and friends move through school with disabilities. She wanted students and teachers to actually know the disabilities that show up in classrooms — and the laws that protect people who have them.</p>
+            <p>She placed first at National History Day for research on the Americans with Disabilities Act, then presented that work at the Smithsonian National Museum of American History in Washington, D.C. She now leads BridgED’s work with schools and clinics.</p>
+          </div>
+        </article>
       </div>
-      <div class="about-image">
-        <img src="images/maura.png" alt="Sean Aono" />
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy;2025 BridgED. Empowering Students. A fiscally sponsored 501(c)(3) nonprofit.</p>
+    <section class="section">
+      <div class="container">
+        <p class="section-kicker">Cofounders</p>
+        <h2 class="section-title">Room for all six</h2>
+        <p class="lede">Kathryn is here. The other five cards are ready for names, roles, and photos.</p>
+        <div class="people" style="margin-top: 28px;">
+          <article class="person">
+            <img src="images/kat.png" alt="Kathryn Shin" />
+            <div class="person-body">
+              <h3>Kathryn Shin</h3>
+              <p class="role">Cofounder · President</p>
+              <p>Leads BridgED’s disability-awareness work with students and educators.</p>
+            </div>
+          </article>
+          <article class="person">
+            <div class="person-placeholder">Photo coming soon</div>
+            <div class="person-body">
+              <h3>Cofounder</h3>
+              <p class="role">Name coming soon</p>
+              <p>Add a short bio and portrait when you have them.</p>
+            </div>
+          </article>
+          <article class="person">
+            <div class="person-placeholder">Photo coming soon</div>
+            <div class="person-body">
+              <h3>Cofounder</h3>
+              <p class="role">Name coming soon</p>
+              <p>Add a short bio and portrait when you have them.</p>
+            </div>
+          </article>
+          <article class="person">
+            <div class="person-placeholder">Photo coming soon</div>
+            <div class="person-body">
+              <h3>Cofounder</h3>
+              <p class="role">Name coming soon</p>
+              <p>Add a short bio and portrait when you have them.</p>
+            </div>
+          </article>
+          <article class="person">
+            <div class="person-placeholder">Photo coming soon</div>
+            <div class="person-body">
+              <h3>Cofounder</h3>
+              <p class="role">Name coming soon</p>
+              <p>Add a short bio and portrait when you have them.</p>
+            </div>
+          </article>
+          <article class="person">
+            <div class="person-placeholder">Photo coming soon</div>
+            <div class="person-body">
+              <h3>Cofounder</h3>
+              <p class="role">Name coming soon</p>
+              <p>Add a short bio and portrait when you have them.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 BridgED. A fiscally sponsored 501(c)(3) nonprofit.</p>
+      <p><a href="https://www.instagram.com/bridged___" target="_blank" rel="noreferrer">Instagram @bridged___</a></p>
     </div>
   </footer>
-
+  <script src="site.js"></script>
 </body>
 </html>

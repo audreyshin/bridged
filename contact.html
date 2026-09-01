@@ -3,60 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us | BridgED</title>
+  <title>Contact | BridgED</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <div class="nav-container">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="BridgED logo" />
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="" />
+        <span class="brand-name">Bridg<span>ED</span></span>
       </a>
-      <nav>
-        <ul class="nav-links">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="information.html">Information</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Our work</a></li>
+          <li><a href="information.html">Learn</a></li>
           <li><a href="resources.html">Resources</a></li>
-          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main>
 
-  <!-- Contact Section -->
-  <section class="contact-section">
-    <div class="container contact-content">
-      <h2>Contact Us</h2>
-      <p><strong>Kathryn Shin</strong> – Co-President, BridgED<br>
-      Email: <a href="mailto:Kathrynshin0714@gmail.com">kathrynshin0714@gmail.com</a></p>
-  
-      <p><strong>Sean Aono</strong> – Co-President, BridgED<br>
-      Email: <a href="mailto:seanaono@gmail.com">seanaono@gmail.com</a></p>
-  
-      <p><strong>Maura Cahill</strong> – Co-President, BridgED<br>
-        Email: <a href="mailto:mauracahill1@icloud.com">mauracahill1@icloud.com</a></p>
-  
-      <div class="social-media">
-        <h2>Follow Us</h2>
-        <p>Instagram: <a href="https://www.instagram.com/bridged___" target="_blank">@bridged___</a></p>
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-kicker">Contact</p>
+        <h1>Talk to the person still running BridgED.</h1>
+        <p>Kathryn Shin is the cofounder who stayed. Reach her for school visits, clinics, or questions about the work.</p>
       </div>
-    </div>
-  </section>
-  
-</main>
-  
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 BridgED. Empowering Students. A fiscally sponsored 501(c)(3) nonprofit.</p>
+    <section class="section" style="padding-top: 0;">
+      <div class="container contact-grid">
+        <article class="contact-card">
+          <h2>Kathryn Shin</h2>
+          <p class="role" style="color: var(--plum); font-weight: 700; margin-bottom: 12px;">Cofounder · President</p>
+          <p>Email <a class="email" href="mailto:Kathrynshin0714@gmail.com">kathrynshin0714@gmail.com</a></p>
+        </article>
+        <article class="contact-card">
+          <h2>Follow along</h2>
+          <p>Instagram is the fastest public window into clinics and school work.</p>
+          <p style="margin-top: 16px;"><a href="https://www.instagram.com/bridged___" target="_blank" rel="noreferrer">@bridged___</a></p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 BridgED. A fiscally sponsored 501(c)(3) nonprofit.</p>
+      <p><a href="https://www.instagram.com/bridged___" target="_blank" rel="noreferrer">Instagram @bridged___</a></p>
     </div>
   </footer>
-
+  <script src="site.js"></script>
 </body>
 </html>

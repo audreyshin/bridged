@@ -2,69 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Resources | BridgED</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Disability rights | BridgED</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,650;9..144,700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <!-- Header -->
-  <header>
-    <div class="nav-container">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="BridgED logo" />
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-bar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.png" alt="" />
+        <span class="brand-name">Bridg<span>ED</span></span>
       </a>
-      <nav>
-        <ul class="nav-links">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav">
+        <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="information.html">Information</a></li>
-          <li><a href="resources.html" class="active">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="work.html">Our work</a></li>
+          <li><a href="information.html">Learn</a></li>
+          <li><a href="resources.html" aria-current="page">Resources</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="section-kicker">Rights in school</p>
+        <h1>The bills and plans that actually protect students.</h1>
+        <p>BridgED teaches these four because they are the ones students, families, and teachers run into: 504 plans, the ADA, IEPs, and IDEA.</p>
+      </div>
+    </section>
 
-
-<!-- Only show the inside of <main class="section"> here for brevity -->
-
-    <main class="section">
-        <div class="container">
-          <h2>Disability Rights & Education Bills</h2>
-          
-          <h3>504 Plan</h3>
-          <p>A civil rights amendment included in the Rehabilitation Act. It prohibits discrimination based on disability in programs or activities that receive federal financial assistance. Examples:</p>
-          <ul>
-            <li>Extended test time</li>
-            <li>Preferential seating</li>
-          </ul>
-      
-          <h3>Americans with Disabilities Act (ADA)</h3>
-          <p>Ensures equal opportunity for individuals with disabilities in schools and public/private spaces. Examples:</p>
-          <ul>
-            <li>Ramps and Braille panels</li>
-            <li>Equal access to extracurriculars</li>
-          </ul>
-      
-          <h3>Individualized Education Program (IEP)</h3>
-          <p>A legal document for eligible students. Includes:</p>
-          <ul>
-            <li>Instruction/support from special ed teachers</li>
-            <li>Accommodations like breaks or extended test time</li>
-          </ul>
-      
-          <h3>Individuals with Disabilities Education Act (IDEA)</h3>
-          <p>Guarantees children with disabilities free, appropriate education in the least restrictive environment. Provides funding and related services.</p>
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cards">
+          <article class="card">
+            <h3>504 Plan</h3>
+            <p>A civil rights protection in the Rehabilitation Act. It prohibits disability discrimination in programs that receive federal financial assistance. In school that can mean extended test time or preferential seating.</p>
+          </article>
+          <article class="card">
+            <h3>Americans with Disabilities Act</h3>
+            <p>The ADA is about equal opportunity in schools and in public and private spaces. Ramps, Braille, and equal access to extracurriculars are not extras — they are the floor.</p>
+          </article>
+          <article class="card">
+            <h3>Individualized Education Program</h3>
+            <p>An IEP is a legal document for eligible students. It can include instruction from special education teachers and accommodations such as breaks or extended test time.</p>
+          </article>
+          <article class="card">
+            <h3>IDEA</h3>
+            <p>The Individuals with Disabilities Education Act guarantees children with disabilities a free, appropriate public education in the least restrictive environment, with funding and related services attached.</p>
+          </article>
         </div>
-      </main>
-      
-      <!-- Footer -->
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 BridgED. Empowering Students. A fiscally sponsored 501(c)(3) nonprofit.</p>
+        <p style="margin-top: 28px;"><a href="information.html">← Back to disability information</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 BridgED. A fiscally sponsored 501(c)(3) nonprofit.</p>
+      <p><a href="https://www.instagram.com/bridged___" target="_blank" rel="noreferrer">Instagram @bridged___</a></p>
     </div>
   </footer>
+  <script src="site.js"></script>
 </body>
 </html>
