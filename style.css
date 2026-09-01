@@ -172,20 +172,27 @@ main {
 }
 
 .hero {
-  position: relative;
-  min-height: 72vh;
   display: grid;
-  place-items: end stretch;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  min-height: 640px;
+  background: var(--plum-deep);
   color: var(--white);
-  background:
-    linear-gradient(180deg, rgba(28, 20, 40, 0.2), rgba(28, 20, 40, 0.78)),
-    url("images/work-capitol-crawl.jpg") center 35% / cover no-repeat;
 }
 
-.hero-inner {
-  width: min(1100px, calc(100% - 40px));
-  margin: 0 auto;
-  padding: 72px 0 56px;
+.hero-copy {
+  width: min(560px, 100%);
+  margin-left: auto;
+  padding: 72px 40px 72px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-photo {
+  min-height: 420px;
+  background:
+    linear-gradient(180deg, rgba(28, 20, 40, 0.05), rgba(28, 20, 40, 0.18)),
+    url("images/hero-banner.jpg") center 30% / cover no-repeat;
 }
 
 .eyebrow {
@@ -454,9 +461,10 @@ main {
 .person img,
 .person-placeholder {
   width: 100%;
-  height: 280px;
+  aspect-ratio: 4 / 5;
+  height: auto;
   object-fit: cover;
-  object-position: center top;
+  object-position: center 18%;
   background: #ece4f4;
 }
 
@@ -704,8 +712,19 @@ main {
   }
 
   .hero {
-    min-height: 82vh;
-    background-position: center 30%;
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .hero-copy {
+    width: min(1100px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 40px 0 48px;
+  }
+
+  .hero-photo {
+    order: -1;
+    min-height: 340px;
   }
 }
 
